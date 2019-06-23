@@ -1,0 +1,52 @@
+/* 导航栏的CSS样式 */
+#tab-header{
+    width: 100%;
+    padding: 5px 0;
+    height: 50px;
+    background: #000;
+}
+#tab-header .content{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+#tab-header::before{
+    content: "";
+    height: 5px;
+    background: linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#tab-header .content #logo{
+    float:left;
+    line-height: 50px;
+    margin-right: 60px;
+    padding: 0 5px;
+    font-size:22px;
+}
+#tab-header .content #nav{
+    float:left;
+}
+#tab-header .content #nav ul li{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 5px;
+    text-align: center;
+    float:left;
+}
+/*#tab-header .content #nav ul li.current{
+    color:#00c1de;
+}*/
+#tab-header .content #nav ul li:first-child a{
+    color:#00c1de;
+}
+#tab-header .content #nav ul li a:hover{
+    color:#00c1de;
+}
+#tab-header .content #search{
+    float:right;
+    height: 50px;
+    line-height: 50px;
+}
